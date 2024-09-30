@@ -59,13 +59,20 @@ img {
 .header .container {
     display: flex;
     justify-content: space-between;
+    padding: 0px 70px;
+    max-height: 65px;
 }
 
 .menu-list {
-    padding: 20px 0px 20px 70px;
+    padding: 20px 0px 20px 0px;
     display: flex;
     justify-content: space-between;
     width: 380px;
+    height: 65px;
+}
+
+.menu-list .active {
+    border-bottom:  2px solid #756257;
 }
 
 .btn_1 {
@@ -74,4 +81,10 @@ img {
     height: 35px;
     font-size: 16px;
     color:#FFFFFF;
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
 }
