@@ -175,23 +175,43 @@ img {
     color:#FFFFFF;
 }
 
-.content_1_inf {
+.content_inf {
     width: 400px;
     height: 384px;
     box-sizing:border-box;
-    background-color: #83B3D3;
 
     display: flex;
     flex-direction: column;
 
-    padding: 100px 90px 80px 90px;
+    padding: 100px 80px 80px 80px;
 }
 
-.content_1_inf_title {
+.color_1 {
+    background-color: #83B3D3;
+}
+
+.content_inf_title {
     text-transform:uppercase;
     margin: 0;
     font-size: 24px;
     line-height: 28px;
 }
 
+.content_2 .container {
+    display: flex;
+    flex-direction: row;
+}
 
+.color_2 {
+    background-color: rgba(131,179,211,0.12);
+}
+
+.content_img {
+    width: 75px;
+    height: 72px;
+    padding-left: 75px;
+}
+
+.content_inf img{
+    padding-bottom: 25px;
+}
