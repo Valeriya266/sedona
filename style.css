@@ -135,17 +135,23 @@ img {
 .main_img_4 {
     position: relative;
     z-index: 2;
+    width: 1200px;
 }
 
 /* Main_text */
 .main_text {
+    padding: 60px 270px 80px 270px;
+
+}
+
+.main_text .container{
     line-height: 36px;
     min-height: 280px;
-    padding: 60px 240px 80px 240px;
     font-size: 22px;
 }
 
 .main_text_title {
     margin-bottom: 30px;
+    width: 740px;
 }
 
