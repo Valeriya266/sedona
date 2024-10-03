@@ -55,6 +55,8 @@ img {
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
+    background: #756257;
+    color:#FFFFFF;
 
     border-radius: 5px;
     transition: opacity 0.3s;
@@ -67,10 +69,14 @@ img {
 .title {
     font-size: 30px;
     text-transform: uppercase;
+    line-height: 36px;
+    margin-top: 0;
 }
 
 .text {
     color: #333333;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 /* Header */
@@ -78,7 +84,6 @@ img {
 .header .container {
     display: flex;
     font-size: 20px;
-
     align-items:center;
     padding: 0px 70px;
     font-weight: 700;
@@ -97,11 +102,9 @@ img {
 }
 
 .btn_1 {
-    background: #756257;
     width: 160px;
     height: 35px;
     font-size: 16px;
-    color:#FFFFFF;
 }
 
 .widgets {
@@ -151,9 +154,7 @@ img {
 /* Main_text */
 
 .main_text .container{
-    line-height: 36px;
     min-height: 280px;
-    font-size: 22px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -206,6 +207,10 @@ img {
     background-color: rgba(131,179,211,0.12);
 }
 
+.color_3 {
+    background-color: rgba(131,179,211,0.20);
+}
+
 .content_img {
     width: 75px;
     height: 72px;
@@ -215,3 +220,24 @@ img {
 .content_inf img{
     padding-bottom: 25px;
 }
+
+/* Interested */
+
+.interested_text {
+    padding: 90px 240px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_2 {
+    margin-top: 60px;
+    width: 575px;
+    height: 60px;
+}
+
+.interested_text_title {
+    margin-bottom: 30px;
+}
+
