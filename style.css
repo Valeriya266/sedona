@@ -58,7 +58,6 @@ img {
     background: #756257;
     color:#FFFFFF;
 
-    border-radius: 5px;
     transition: opacity 0.3s;
 }
 
@@ -74,7 +73,6 @@ img {
 }
 
 .text {
-    color: #333333;
     font-size: 22px;
     line-height: 26px;
 }
@@ -105,6 +103,7 @@ img {
     width: 160px;
     height: 35px;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 .widgets {
@@ -235,9 +234,63 @@ img {
     margin-top: 60px;
     width: 575px;
     height: 60px;
+    border-radius: 10px;
 }
 
 .interested_text_title {
     margin-bottom: 30px;
 }
+ /*Subscribe */
+
+.subscribe .container{
+    background-image: url("./images/bg_2.jpg");
+    background-repeat: no-repeat;
+    color:#FFFFFF;
+}
+
+ .subscribe_text {
+    padding: 95px 200px 95px 200px;
+ }
+
+ .subscribe_text_text {
+    margin-bottom: 50px;
+ }
+
+ .form-group{
+    position: relative;
+    display: inline-block;
+    margin-left: -200px;
+  }
+  
+  .form-group input{
+    width: 594px;
+    height: 55.5px;
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #FFFFFF;
+    padding-left: 20px;
+  }
+  
+  .form-group button{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    border: 1px solid #83B3D3;
+    background-color: #83B3D3;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+
+
 
