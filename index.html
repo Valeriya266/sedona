@@ -129,20 +129,21 @@
         </div>
     </footer>
 
-    <form>
-        <h1 class="form_title title">Поиск гостиницы в Седоне</h1>
-        <a href="" class="title_close"><img src="" alt=""></a>
+    <form class="form_booking">
+        <div class="form_title_and_btn">
+            <div class="form_title">Поиск гостиницы в Седоне</div>
+            <a href="" class="form_close"><img src="./images/btn_close.svg" alt="close"></a>
+        </div>
+
         <p>Дата заезда:<input type="date" name="calendar"></p>
         <p>Дата заезда:<input type="date" name="calendar"></p>
         <p>
             <label for="adult">Взрослые:</label>
             <input type="number" step="1" min="0" max="100" value="1" id="adult" name="adult"/>
-        </p>
-        <p>
             <label for="child">Дети:</label>
-            <input type="number" step="1" min="1" max="100" value="1" id="child" name="child"/>
+            <input type="number" step="1" min="1" max="100" value="1" id="child" name="child"/>          
         </p>
-        <button class="btn btn_2">Найти</button>
+        <button class="form_btn">Найти</button>
     </form>
 </body>
 </html>
