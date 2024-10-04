@@ -118,7 +118,7 @@ img {
     padding: 0px 210px 0px 80px;
     position: absolute;
     z-index: 2;
-    left: 500px;
+    left: 700px;
     right: 0;
 }
 
@@ -295,6 +295,26 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+/* Footer */
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 70px;
+    align-items: center;
+}
+
+.footer_phonenumber {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 
