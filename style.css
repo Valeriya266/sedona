@@ -81,6 +81,7 @@ img {
 
 .header .container {
     display: flex;
+    justify-content: space-between;
     font-size: 20px;
     align-items:center;
     padding: 0px 70px;
@@ -115,11 +116,16 @@ img {
 
 .header_logo {
     padding: 0px 210px 0px 80px;
+    position: absolute;
+    z-index: 2;
+    left: 500px;
+    right: 0;
 }
 
 /* MAIN */
 
 .main .container{
+    position:relative;
     background-image: url("./images/background.jpg");
     background-repeat: no-repeat;
     height: 485px;
@@ -248,21 +254,21 @@ img {
     color:#FFFFFF;
 }
 
- .subscribe_text {
+.subscribe_text {
     padding: 95px 200px 95px 200px;
- }
+}
 
- .subscribe_text_text {
+.subscribe_text_text {
     margin-bottom: 50px;
- }
+}
 
- .form-group{
+.form-group{
     position: relative;
     display: inline-block;
     margin-left: -200px;
-  }
+}
   
-  .form-group input{
+.form-group input{
     width: 594px;
     height: 55.5px;
     border-radius: 10px;
@@ -270,9 +276,9 @@ img {
     border-bottom-right-radius: 0;
     border: 1px solid #FFFFFF;
     padding-left: 20px;
-  }
+}
   
-  .form-group button{
+.form-group button{
     width: 200px;
     height: 60px;
     border-radius: 10px;
@@ -289,7 +295,7 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF;
-  }
+}
 
 
 
