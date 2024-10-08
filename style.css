@@ -320,16 +320,29 @@ img {
 
 /* Form */
 .form_booking {
-    background-color: aqua;
+    background-color: #FFFFFF;
     width: 715px;
-    height: 560px;
+
     box-sizing: border-box;
     padding: 60px 70px 70px 70px;
     border-radius: 30px;
 
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 40px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form_booking input[type="date"] {
+    width: 420px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border: none;
+    padding: 0 19px;
+
 }
 
 .form_title_and_btn {
@@ -342,10 +355,30 @@ img {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
+    line-height: 40px;
 }
 
 .form_booking p {
     font-size: 18px;
 }
 
+.form_booking input {
+    margin-left: 10px;
+}
 
+.form_btn {
+    width: 575px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #83B3D3;
+}
+
+.form_booking input[type="number"] {
+    width: 130px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border: none;
+    padding: 0 19px;
+    margin-left: 20px;
+}
