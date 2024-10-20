@@ -5,24 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedona</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="active"><a href=""">Главная</a></li>
-                    <li><a href="">О Седоне</a></li>
-                    <li><a href="">Гостиницы</a></li>
+        <div class="header__container">
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-list-item_active"><a href="">Главная</a></li>
+                    <li class="header__menu-list-item"><a href="">О Седоне</a></li>
+                    <li class="header__menu-list-item"><a href="">Гостиницы</a></li>
                 </ul>
             </nav>
-            <img href="./img/sedona.svg" class="logo"></img>
-            <nav class="widgets">
-                <img href="./img/Vectorfind.svg" class="widget"><a href=""></a></img>
-                <img href="./img/Vectorlike.svg" class="widget"><a href=""></a></img>
-                <buttom class="btn btn_1">хочу сюда!</buttom>
+            <img src="./images/sedona.svg" alt="logo" class="header__logo">
+            <nav class="header__widgets">
+                <a href=""><img src="./images/find.svg" class="header__widget" alt="find"></a>
+                <a href=""><img src="./images/like.svg" class="header__widget" alt="like"></a>
+                <button class="header__btn">хочу сюда!</button>
             </nav>
         </div>
     </header>
+    <div class="main__container">
+        <section class="main-title">
+            <img src="./images/Vectorwelcome.svg" alt="title" class="main-title__img-1">
+            <img src="./images/Vectorgorgeous.svg" alt="title" class="main-title__img-2">
+            <img src="./images/Vectorsedona_title.svg" alt="title" class="main-title__img-3">
+            <img src="./images/dividerbg_add.svg" alt="text_main" class="main-title__img-4">
+        </section>
+        <section class="main-text">
+            <h1 class="main-text__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p class="main-text__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </section>
+        <section class="content content-font-color-1">
+            <div class="content__inf content-bg-color-1">
+                <h2 class="content__inf-title">Настоящий<br> городок</h2>
+                <p class="content__inf-text">— №1 —</p>
+                <p class="content__inf-text">Седона — не аттракцион<br>для туристов, там течёт<br>своя жизнь</p>
+            </div>
+            <img src="./images/town.jpg" alt="town" class="content__bg-img">
+        </section>
+        <section class="content content-font-color-2">
+            <div class="content__inf content-bg-color-2">
+                <img src="./images/house.svg" alt="house" class="content__img">
+                <h2 class="content__inf-title">Жильё</h2>
+                <p class="content__inf-text">Рекомендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
+            </div>
+            <div class="content__inf">
+                <img src="./images/burger.svg" alt="burger" class="content__img">
+                <h2 class="content__inf-title">Еда</h2>
+                <p class="content__inf-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+            </div>
+            <div class="content__inf content-bg-color-2">
+                <img src="./images/gift.svg" alt="gift" class="content__img">
+                <h2 class="content__inf-title">Сувениры</h2>
+                <p class="content__inf-text">Не только китайского, <br>но и настоящего местного <br>производства!</p>
+            </div>
+        </section>
+        <section class="content content-font-color-1">
+            <img src="./images/bridge.jpg" alt="bridge" class="content__bg-img">
+            <div class="content__inf content-bg-color-1">
+                <h2 class="content__inf-title">Там есть<br>мост дьявола</h2>
+                <p class="content__inf-text">— №2 —</p>
+                <p class="content__inf-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+        </section>
+        <section class="content content-font-color-2">
+            <div class="content__inf content-bg-color-2">
+                <h2 class="content__inf-title">Небольшая<br>площадь</h2>
+                <p class="content__inf-text">— №3 —</p>
+                <p class="content__inf-text">Все достопримечательности<br>находятся очень близко</p>
+            </div>
+            <div class="content__inf content-bg-color-3">
+                <h2 class="content__inf-title">Красивая<br>дорога</h2>
+                <p class="content__inf-text">— №4 —</p>
+                <p class="content__inf-text">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+            </div>
+            <div class="content__inf content-bg-color-2">
+                <h2 class="content__inf-title">Мало<br>туристов</h2>
+                <p class="content__inf-text">— №5 —</p>
+                <p class="content__inf-text">Большинство едет в Гранд<br>Каньон и толпится там</p>
+            </div>
+        </section>
+        <section class="find-hotel">
+            <div class="find-hotel__text">
+                <h1 class="find-hotel__text-title">Заинтересовались?</h1>
+                <div class="find-hotel__text-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+                <button class="find-hotel__btn" id="modal-closer">ПОИСК ГОСТИНИЦЫ В седоне</button>
+            </div>
+        </section>
+        <section class="subscribe-form">
+            <div class="subscribe-form__text">
+                <h1 class="subscribe-form__text-title">Подпишитесь на рассылку</h1>
+                <div class="subscribe-form__text-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</div>
+                <div class="subscribe-form__form">
+                    <input type="text" class="subscribe-form__form-input" placeholder="Ваш e-mail">
+                    <button type="button" class="subscribe-form__form-button">Подписаться</button>
+                </div>
+            </div>   
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href="" class="footer__links_link"><img src="./images/social-twitter.svg" alt="twitter"></a>
+                <a href="" class="footer__links_link"><img src="./images/social-facebook.svg" alt="facebook"></a>
+                <a href="" class="footer__links_link"><img src="./images/social-youtube.svg" alt="youtube"></a>
+            </div>
+            <a href=""><div class="footer__phonenumber">+7 (812) 812-12-12</div></a>
+            <a href=""><img src="./images/html_academy.svg" alt="logo" class="footer__logo"></a>
+        </div>
+    </footer>
+
+    <form class="form-booking">
+        <div class="form-booking__title-and-btn">
+            <div class="form-booking__title">Поиск гостиницы в Седоне</div>
+            <a href="" class="form-booking__close"><img src="./images/btn_close.svg" alt="close"></a>
+        </div>
+
+        <p class="input-date__name">Дата заезда:<input type="date" name="calendar" class="input-date__input"></p>
+        <p class="input-date__name">Дата выезда:<input type="date" name="calendar" class="input-date__input"></p>
+        <div class="number-input">
+            <label for="adult" class="input-num__name">Взрослые:</label>
+            <div class="number">
+                <button class="number-minus" type="button"><img src="./images/minus.svg" alt="minus"></button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button"><img src="./images/plus.svg" alt="plus"></button>
+            </div>
+            <label for="adult" class="input-num__name">Дети:</label>
+            <div class="number">
+                <button class="number-minus" type="button"><img src="./images/minus.svg" alt="minus"></button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button"><img src="./images/plus.svg" alt="plus"></button>
+            </div>
+        </div>
+        <button class="form-booking__btn">Найти</button>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
