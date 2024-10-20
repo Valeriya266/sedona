@@ -85,6 +85,8 @@ div[class*=_text] {
     padding: 0 15px;
     overflow: hidden;
     max-width: 1200;
+    box-sizing: border-box;
+    background-size: cover;
 }
 
 /* Header */
@@ -338,11 +340,12 @@ div[class*=_text] {
 /* Form */
 .form-booking {
     background-color: #FFFFFF;
-    width: 715px;
+    width: 720px;
 
     box-sizing: border-box;
     padding: 60px 70px 70px 70px;
     border-radius: 30px;
+    border: 1px solid #111111;
 
     display: flex;
     flex-direction: column;
@@ -353,13 +356,13 @@ div[class*=_text] {
     font-weight: 700;
 }
 
-.form-booking input[type="date"] {
-    width: 420px;
+.input-date__input {
+    width: 410px;
     height: 50px;
     background-color: #F2F2F2;
     border: none;
-    padding: 0 19px;
-
+    padding: 0 20px;
+    margin-left: 20px;
 }
 
 .form-booking__title-and-btn {
@@ -380,10 +383,6 @@ div[class*=_text] {
     font-size: 18px;
 }
 
-.form-booking input {
-    margin-left: 10px;
-}
-
 .form-booking__btn {
     width: 575px;
     height: 60px;
@@ -392,11 +391,73 @@ div[class*=_text] {
     background-color: #83B3D3;
 }
 
-.form-booking input[type="number"] {
+.input-num__input{
     width: 130px;
     height: 50px;
     background-color: #F2F2F2;
     border: none;
     padding: 0 19px;
-    margin-left: 20px;
+    margin-left: 40px;
+}
+
+.input-num__input_1 {
+    margin-right: 20px;
+}
+
+.number-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.number {
+	display: inline-block;
+	position: relative;
+	width: 130px;
+    height: 50px;
+}
+.number input[type="number"] {
+	display: block;
+	height: 50px;
+	line-height: 40px;
+    font-size: 18px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    border: none;
+}
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 10px;
+	width: 40px;
+	padding: 0;
+	display: block;
+	border: none;
+    background-color: #F2F2F2;
+}
+.number-plus {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 40px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+    background-color: #F2F2F2;
 }
