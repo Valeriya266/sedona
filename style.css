@@ -215,20 +215,24 @@ div[class*=_text] {
     line-height: 28px;
 }
 
-.content-font-color-2{
+.content_font-color_black{
     color: black;
 }
 
-.content-bg-color-1 {
+.content_bg-color_c-dark {
+    background-color: #68A2C2;
+}
+
+.content_bg-color_c-light {
     background-color: #83B3D3;
 }
 
-.content-bg-color-2 {
-    background-color: rgba(131,179,211,0.12);
+.content_bg-color_secondary-c-light-012 {
+    background-color: rgba(130, 179, 211, 0.12);
 }
 
-.content-bg-color-3 {
-    background-color: rgba(131,179,211,0.20);
+.content_bg-color_secondary-c-light-02 {
+    background-color: rgba(130, 179, 211, 0.2);
 }
 
 .content__img {
