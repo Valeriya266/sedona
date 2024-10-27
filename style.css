@@ -108,7 +108,7 @@ div[class*=_text] {
     height: 65px;
 }
 
-.header__menu-list-item_active {
+.header__menu-item-active {
     border-bottom:  2px solid #756257;
 }
 
