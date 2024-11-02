@@ -1,22 +1,20 @@
 window.addEventListener('DOMContentLoaded', function() {
     // Modal
 
-    let modalTrigger = document.querySelectorAll('[modal-opener]'),
+    let modalTrigger = document.querySelectorAll('#modal-opener'),
         modal = document.querySelector('.form-booking'),
-        modalCloseBtn = document.querySelector('form-booking__close');
+        modalCloseBtn = document.querySelector('.form-booking__close');
 
     closeModal();
         
     function openModal () {
-        modal.classList.add('show');
-        modal.classList.remove('hide');
-        document.body.style.overflow = 'hidden';
+        modal.style.display = 'block';
+        /*document.body.style.overflow = 'hidden';*/
         clearInterval(modalTimerId);
     };
             
     function closeModal () {
-        modal.classList.add('hide');
-        modal.classList.remove('show');
+        modal.style.display = 'none';
         document.body.style.overflow = '';
     };
 
