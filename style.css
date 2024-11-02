@@ -257,6 +257,7 @@ div[class*=_text] {
 
 .find-hotel__title {
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .find-hotel__text {
@@ -272,6 +273,11 @@ div[class*=_text] {
 
 .subscribe-form__text {
     padding: 95px 200px 95px 200px;
+}
+
+.subscribe-form__text-title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .subscribe-form__text-text {
