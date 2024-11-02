@@ -8,7 +8,7 @@ body {
     font-size: 18px;
     text-align: center;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 1.16;
     background-color: #FFFFFF;
     color: black;
     width: 100%;
@@ -35,14 +35,6 @@ ul {
 p {
     margin: 0;
 }
-
-/*p + p {
-    margin-top: 25px;
-}
-
-h2 + p {
-    margin-top: 25px;
-}*/
 
 img {
     max-width: 100%;
@@ -212,7 +204,7 @@ div[class*=_text] {
     text-transform:uppercase;
     margin: 0;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.17;
 }
 
 .content_font-color_black{
@@ -332,7 +324,7 @@ div[class*=_text] {
 
 .footer__phonenumber {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 1.0;
 }
 
 .footer__links {
@@ -379,7 +371,7 @@ div[class*=_text] {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.33;
     margin-right: 100px;
 }
 
@@ -424,7 +416,7 @@ div[class*=_text] {
 .number input[type="number"] {
 	display: block;
 	height: 50px;
-	line-height: 40px;
+	line-height: 2.22;
     font-size: 18px;
 	width: 100%;
 	padding: 0;
