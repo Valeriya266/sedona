@@ -382,7 +382,7 @@ div[class*=_text] {
 .hotels-list__item {
     padding: 30px 70px;
     border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+
 
     display: flex;
     flex-direction: row;
@@ -411,7 +411,8 @@ div[class*=_text] {
 .hotels-list__item-type {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    width: 240px;
+    justify-content: space-between;
     color: #756257;
     font-weight: 500;
 }
@@ -448,6 +449,39 @@ div[class*=_text] {
 
 .hotels-list__item-raiting {
     margin-left: 360px;
+    background-color: #fff;
+}
+
+/*******************************/
+.hotels-list__navigation-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    padding: 30px 70px;
+}
+
+.hotels-list__navigation-addition {
+    padding: 30px 285px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.navigation__btn {
+    width: 625px;
+    height: 55px;
+    background-color: #83B3D3;
+    border: 1px solid #83B3D3;
+    border-radius: 4px;
+}
+
+/************************************/
+.navigation-form__form-item {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #f2f2f2;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
 /*Subscribe-form */
