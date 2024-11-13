@@ -209,19 +209,19 @@ div[class*=_text] {
     color: black;
 }
 
-.content_bg-color_c-dark {
+.content__inf_bg-color_c-dark {
     background-color: #68A2C2;
 }
 
-.content_bg-color_c-light {
+.content__inf_bg-color_c-light {
     background-color: #83B3D3;
 }
 
-.content_bg-color_secondary-c-light-012 {
+.content__inf_bg-color_secondary-c-light-012 {
     background-color: rgba(130, 179, 211, 0.12);
 }
 
-.content_bg-color_secondary-c-light-02 {
+.content__inf_bg-color_secondary-c-light-02 {
     background-color: rgba(130, 179, 211, 0.2);
 }
 
