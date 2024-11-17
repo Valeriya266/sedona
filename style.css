@@ -467,7 +467,7 @@ body {
     margin-left: 20px;
 }
 
-.form-booking__title-and-btn {
+.form-booking__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
