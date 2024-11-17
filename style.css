@@ -181,6 +181,7 @@ body {
 .main-board{
     position:relative;
     background-image: url("./images/background.jpg");
+    background-color: #64aeb5;
     background-repeat: no-repeat;
     height: 485px;
     margin: 0 auto;
@@ -329,6 +330,7 @@ body {
 
 .subscribe{
     background-image: url("./images/bg_2.jpg");
+    background-color: #68a5ab;
     background-repeat: no-repeat;
     color:#FFFFFF;
 }
