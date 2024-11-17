@@ -335,12 +335,12 @@ body {
     padding: 95px 200px 95px 200px;
 }
 
-.subscribe__container-title {
+.subscribe__title {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.subscribe__container-text {
+.subscribe__text {
     font-size: 22px;
 }
 
