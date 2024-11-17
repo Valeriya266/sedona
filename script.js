@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
         
     function openModal () {
         modal.style.display = 'block';
+        modal.classList.add('.active-modal');
         /*document.body.style.overflow = 'hidden';*/
         clearInterval(modalTimerId);
     };
@@ -32,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.code === "Escape" && modal.classList.contains('show')) { 
+        if (e.code === "Escape" && modal.classList.contains('block')) { 
             closeModal();
         }
     });
