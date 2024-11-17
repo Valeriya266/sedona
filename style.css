@@ -119,6 +119,7 @@ body {
 .header__item:focus {
     border: 3px solid #83B3D3;
     border-radius: 10px;
+    padding: 6px 10px;
 }
 
 .header__item {
@@ -164,6 +165,7 @@ body {
 .header__widget:focus {
     border: 3px solid #83B3D3;
     border-radius: 10px;
+    padding: 8px;
 }
 
 .header__logo {
@@ -425,11 +427,68 @@ body {
     line-height: 1.0;
 }
 
+.footer__phonenumber:hover {
+    color: #756257;
+    transition: 1s;
+}
+
+.footer__phonenumber:active {
+    opacity: 0.2;
+}
+
+.footer__phonenumber:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 15px;
+    color: #756257;
+}
+
 .footer__links {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
+
+.footer__link {
+    opacity: 0.8;
+}
+
+.footer__link:hover {
+    opacity: 1.0;
+}
+
+.footer__link:active {
+    opacity: 0.2;
+}
+
+.footer__link:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 8px 10px 0px 10px;
+    opacity: 1.0;
+}
+
+.footer__link-small:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 8px 14px;
+}
+
+.footer__logo:hover {
+    opacity: 0.8;
+}
+
+.footer__logo:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.footer__logo:active {
+    opacity: 0.2;
+}
+
 
 /* Form */
 .form-booking {
