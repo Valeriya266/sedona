@@ -9,14 +9,24 @@ window.addEventListener('DOMContentLoaded', function() {
         
     function openModal () {
         modal.style.display = 'block';
-        modal.classList.add('.active-modal');
-        /*document.body.style.overflow = 'hidden';*/
+        /*modal.classList.add('.active-modal');
+        /*document.body.style.background-color = "rgba(0, 0, 0, 0.5)";*/
+
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`;
+
         clearInterval(modalTimerId);
     };
             
     function closeModal () {
         modal.style.display = 'none';
-        document.body.style.overflow = '';
+
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+        /*document.body.style.overflow = '';*/
     };
 
 
