@@ -15,6 +15,11 @@ window.addEventListener('DOMContentLoaded', function() {
         document.body.style.position = 'fixed';
         document.body.style.top = `-${window.scrollY}px`;
 
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('active-modal');
+
+        document.querySelector('.active-modal').append(modal);
+
         clearInterval(modalTimerId);
     };
             
