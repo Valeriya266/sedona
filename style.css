@@ -213,11 +213,11 @@ body {
 /* slogan-description */
 
 .slogan-description{
-    min-height: 280px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 60px 250px 80px 250px;
+    padding: 63px 250px 80px 250px;
+    line-height: 36px;
 }
 
 .slogan-description__title {
