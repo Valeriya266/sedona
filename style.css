@@ -231,7 +231,6 @@ body {
 
 /* Content */
 .content {
-    height: 384px;
     display: flex;
     flex-direction: row;
     color:#FFFFFF;
