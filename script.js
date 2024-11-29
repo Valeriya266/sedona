@@ -3,28 +3,24 @@ window.addEventListener('DOMContentLoaded', function() {
 
     let modalTrigger = document.querySelectorAll('#modal-opener'),
         modal = document.querySelector('.form-booking'),
-        modalCloseBtn = document.querySelector('.form-booking__close');
+        modalCloseBtn = document.querySelector('.form-booking__close'),
+        wrapper = document.querySelector('#modal-wrapper');
 
     closeModal();
         
     function openModal () {
         modal.style.display = 'block';
-        /*modal.classList.add('.active-modal');
-        /*document.body.style.background-color = "rgba(0, 0, 0, 0.5)";*/
+        wrapper.classList.add('modal-wrapper');
 
         document.body.style.position = 'fixed';
         document.body.style.top = `-${window.scrollY}px`;
-
-        const wrapper = document.createElement('div');
-        wrapper.classList.add('active-modal');
-
-        document.querySelector('.active-modal').append(modal);
 
         clearInterval(modalTimerId);
     };
             
     function closeModal () {
         modal.style.display = 'none';
+        wrapper.classList.remove('modal-wrapper');
 
         const scrollY = document.body.style.top;
         document.body.style.position = '';

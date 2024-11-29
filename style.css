@@ -432,16 +432,14 @@ body {
 }
 
 /* Form */
-.active-modal:before {
-    content: '';
-    background: #847c7c;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    z-index: 5;
+.modal-wrapper{
+    position:fixed;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.3);
+    z-index:100;
 }
 
 .form-booking {
@@ -464,6 +462,8 @@ body {
 
     font-size: 18px;
     font-weight: 700;
+
+    z-index: 2;
 }
 
 .input-date__name {
