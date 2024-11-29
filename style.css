@@ -475,8 +475,9 @@ body {
     height: 50px;
     background-color: #F2F2F2;
     border: none;
-    padding: 0 20px;
+    padding: 0 18px;
     margin-left: 20px;
+    border-radius: 4px;
 }
 
 .form-booking__content {
@@ -576,4 +577,48 @@ body {
 	text-align: center;
 	border: none;
     background-color: #F2F2F2;
+}
+/*Анимация кнопки*/
+.form-booking__close:hover {
+
+}
+
+.form-booking__close:focus {
+    border-radius: 50%;
+    border: 3px solid #68A2C2;
+}
+
+.form-booking__close:active {
+    
+}
+
+/*Анимация формы*/
+.input-date__input:hover {
+    background-color: #e5e5e5;
+}
+
+.input-date__input:focus {
+    background-color: #e5e5e5;
+    border: 3px solid #68A2C2;
+}
+
+.input-date__input:active {
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+
+/*Анимация кнопки*/
+
+.form-booking__btn:hover {
+    background-color: #68A2C2;
+}
+
+.form-booking__btn:focus {
+    border: 3px solid #756275;
+    background-color: #68A2C2;
+}
+
+.form-booking__btn:active {
+    background-color: #68A2C2;
+    color: #e5dce5;
 }
