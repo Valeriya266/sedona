@@ -622,3 +622,45 @@ body {
     background-color: #68A2C2;
     color: #e5dce5;
 }
+
+/*Всплывающая подсказка*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Текст подсказки */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: left;
+    width: 210px;
+    background-color: #333333;
+    color: #fff;
+    border-radius: 10px;
+
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    right: -120px;
+}
+    /* Подсказка стрелка */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-left: -7px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #333333 transparent transparent transparent;
+  }
+  
+  /* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
