@@ -644,8 +644,8 @@ body {
 
     position: absolute;
     z-index: 1;
-    top: 125%;
-    right: -120px;
+    top: -520%;
+    right: -123px;
 }
     /* Подсказка стрелка */
 .tooltip .tooltiptext::after {
