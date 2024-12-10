@@ -584,8 +584,7 @@ body {
 }
 
 .form-booking__close:focus {
-    border-radius: 50%;
-    border: 3px solid #68A2C2;
+
 }
 
 .form-booking__close:active {
