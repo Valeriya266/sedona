@@ -432,8 +432,18 @@ body {
 }
 
 /* Form */
+.modal-wrapper{
+    position:fixed;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.3);
+    z-index:100;
+}
+
 .form-booking {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -452,6 +462,8 @@ body {
 
     font-size: 18px;
     font-weight: 700;
+
+    z-index: 2;
 }
 
 .input-date__name {
@@ -463,11 +475,12 @@ body {
     height: 50px;
     background-color: #F2F2F2;
     border: none;
-    padding: 0 20px;
+    padding: 0 18px;
     margin-left: 20px;
+    border-radius: 4px;
 }
 
-.form-booking__title-and-btn {
+.form-booking__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -565,3 +578,88 @@ body {
 	border: none;
     background-color: #F2F2F2;
 }
+/*Анимация кнопки*/
+.form-booking__close:hover {
+
+}
+
+.form-booking__close:focus {
+
+}
+
+.form-booking__close:active {
+    
+}
+
+/*Анимация формы*/
+.input-date__input:hover {
+    background-color: #e5e5e5;
+}
+
+.input-date__input:focus {
+    background-color: #e5e5e5;
+    border: 3px solid #68A2C2;
+}
+
+.input-date__input:active {
+    background-color: #ffffff;
+    border: 2px solid black;
+}
+
+/*Анимация кнопки*/
+
+.form-booking__btn:hover {
+    background-color: #68A2C2;
+}
+
+.form-booking__btn:focus {
+    border: 3px solid #756275;
+    background-color: #68A2C2;
+}
+
+.form-booking__btn:active {
+    background-color: #68A2C2;
+    color: #e5dce5;
+}
+
+/*Всплывающая подсказка*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Текст подсказки */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: left;
+    width: 210px;
+    background-color: #333333;
+    color: #fff;
+    border-radius: 10px;
+
+    position: absolute;
+    z-index: 1;
+    top: -520%;
+    right: -123px;
+}
+    /* Подсказка стрелка */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    margin-left: -7px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #333333 transparent transparent transparent;
+  }
+  
+  /* Отображение текста подсказки при наведении курсора мыши на контейнер подсказки */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

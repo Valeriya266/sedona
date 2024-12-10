@@ -91,7 +91,7 @@
         <section class="find-hotel">
             <h2 class="find-hotel__title">Заинтересовались?</h2>
             <div class="find-hotel__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</div>
-            <button class="find-hotel__btn" id="modal-opener">ПОИСК ГОСТИНИЦЫ В седоне</button>
+            <button id="modal-opener" class="find-hotel__btn" id="modal-opener">ПОИСК ГОСТИНИЦЫ В седоне</button>
         </section>
         <section class="subscribe">
             <div class="subscribe__container">
@@ -117,14 +117,15 @@
         </div>
     </footer>
 
+    <div id="modal-wrapper">
     <form class="form-booking">
-        <div class="form-booking__title-and-btn">
+        <div class="form-booking__content">
             <div class="form-booking__title">Поиск гостиницы в Седоне</div>
             <a href="#" class="form-booking__close"><img src="./images/btn_close.svg" alt="close"></a>
         </div>
 
-        <p class="input-date__name">Дата заезда:<input type="date" name="calendar" class="input-date__input"></p>
-        <p class="input-date__name">Дата выезда:<input type="date" name="calendar" class="input-date__input"></p>
+        <p class="input-date__name">Дата заезда:<input type="date" name="calendar" class="input-date__input" placeholder="Укажите дату"></p>
+        <p class="input-date__name">Дата выезда:<input type="date" name="calendar" class="input-date__input" placeholder="Укажите дату"></p>
         <div class="number-input">
             <label for="adult" class="input-num__name">Взрослые:</label>
             <div class="number">
@@ -133,6 +134,10 @@
                 <button class="number-plus" type="button"><img src="./images/plus.svg" alt="plus"></button>
             </div>
             <label for="adult" class="input-num__name">Дети:</label>
+                <div class="tooltip">
+                    <img src="./images/Ellipse.png">
+                    <span class="tooltiptext">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </div>
             <div class="number">
                 <button class="number-minus" type="button"><img src="./images/minus.svg" alt="minus"></button>
                 <input type="number" min="0" value="1" readonly>
@@ -141,6 +146,7 @@
         </div>
         <button class="form-booking__btn">Найти</button>
     </form>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

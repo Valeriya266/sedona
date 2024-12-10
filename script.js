@@ -3,19 +3,31 @@ window.addEventListener('DOMContentLoaded', function() {
 
     let modalTrigger = document.querySelectorAll('#modal-opener'),
         modal = document.querySelector('.form-booking'),
-        modalCloseBtn = document.querySelector('.form-booking__close');
+        modalCloseBtn = document.querySelector('.form-booking__close'),
+        wrapper = document.querySelector('#modal-wrapper');
 
     closeModal();
         
     function openModal () {
         modal.style.display = 'block';
-        /*document.body.style.overflow = 'hidden';*/
+        wrapper.classList.add('modal-wrapper');
+
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`;
+
         clearInterval(modalTimerId);
     };
             
     function closeModal () {
         modal.style.display = 'none';
-        document.body.style.overflow = '';
+        wrapper.classList.remove('modal-wrapper');
+
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
+        /*document.body.style.overflow = '';*/
     };
 
 
@@ -32,7 +44,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.code === "Escape" && modal.classList.contains('show')) { 
+        if (e.code === "Escape" && modal.classList.contains('block')) { 
             closeModal();
         }
     });
