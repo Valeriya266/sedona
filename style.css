@@ -119,6 +119,7 @@ body {
 .header__item:focus {
     border: 3px solid #83B3D3;
     border-radius: 10px;
+    padding: 6px 10px;
 }
 
 .header__item {
@@ -164,6 +165,7 @@ body {
 .header__widget:focus {
     border: 3px solid #83B3D3;
     border-radius: 10px;
+    padding: 8px;
 }
 
 .header__logo {
@@ -179,6 +181,7 @@ body {
 .main-board{
     position:relative;
     background-image: url("./images/background.jpg");
+    background-color: #64aeb5;
     background-repeat: no-repeat;
     height: 485px;
     margin: 0 auto;
@@ -210,11 +213,11 @@ body {
 /* slogan-description */
 
 .slogan-description{
-    min-height: 280px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 60px 250px 80px 250px;
+    padding: 63px 250px 80px 250px;
+    line-height: 36px;
 }
 
 .slogan-description__title {
@@ -228,7 +231,6 @@ body {
 
 /* Content */
 .content {
-    height: 384px;
     display: flex;
     flex-direction: row;
     color:#FFFFFF;
@@ -236,7 +238,6 @@ body {
 
 .content__inf {
     width: 400px;
-    height: 384px;
     box-sizing:border-box;
     gap: 25px;
 
@@ -327,6 +328,7 @@ body {
 
 .subscribe{
     background-image: url("./images/bg_2.jpg");
+    background-color: #68a5ab;
     background-repeat: no-repeat;
     color:#FFFFFF;
 }
@@ -335,12 +337,12 @@ body {
     padding: 95px 200px 95px 200px;
 }
 
-.subscribe__container-title {
+.subscribe__title {
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.subscribe__container-text {
+.subscribe__text {
     font-size: 22px;
 }
 
@@ -425,11 +427,68 @@ body {
     line-height: 1.0;
 }
 
+.footer__phonenumber:hover {
+    color: #756257;
+    transition: 1s;
+}
+
+.footer__phonenumber:active {
+    opacity: 0.2;
+}
+
+.footer__phonenumber:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 15px;
+    color: #756257;
+}
+
 .footer__links {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
+
+.footer__link {
+    opacity: 0.8;
+}
+
+.footer__link:hover {
+    opacity: 1.0;
+}
+
+.footer__link:active {
+    opacity: 0.2;
+}
+
+.footer__link:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 8px 10px 0px 10px;
+    opacity: 1.0;
+}
+
+.footer__link-small:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 8px 14px;
+}
+
+.footer__logo:hover {
+    opacity: 0.8;
+}
+
+.footer__logo:focus {
+    border: 3px solid #68A2C2;
+    border-radius: 10px;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.footer__logo:active {
+    opacity: 0.2;
+}
+
 
 /* Form */
 .form-booking {
