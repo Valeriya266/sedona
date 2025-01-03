@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поиск гостиницы в Седоне</title>
-    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -97,7 +97,8 @@
                 <h2 class="hotels-list__result">Найдено гостиниц:</h2>
                 <form class="hotels-list__form">
                     <select name="price-level" id="price-select" class="hotels-list__form-item">
-                        <option value="low-price">Сначала дешевые</option>
+                        <option value="">-- Выберите цену --</option>
+                        <option value="low-price" selected>Сначала дешевые</option>
                         <option value="high-price">Сначала дорогие</option>
                     </select>
                 </form>
